@@ -1,0 +1,227 @@
+// This import applies a global reset to any page that imports this stylesheet.
+@import "blueprint/reset";
+
+// To configure blueprint, edit the partials/_base.sass file.
+@import "partials/base";
+
+// Import all the default blueprint modules so that we can access their mixins.
+@import "blueprint";
+
+// Generate the blueprint framework according to your configuration:
+@include blueprint;
+
+@import "compass/utilities/lists/horizontal-list";
+@import "partials/form";
+
+
+
+body.bp {
+	@include blueprint-typography(true);
+	@include blueprint-utilities;
+
+	#container {
+		@include container;
+	}
+	
+	a {
+		&:visited {
+			
+		}
+		&:hover {
+			
+		}
+	}
+	
+	header#top {
+		@include column($blueprint-grid-columns);
+		margin-bottom: 3em;
+		#logo {
+			font-family: "Calibri", "Arial", "Helvetica Neue", sans-serif;
+			letter-spacing: -0.05em;
+			font-size: 4em;
+			margin-bottom: 50px;
+		}
+		nav {
+			padding-bottom: 1em;
+			@include horizontal-list;
+			border-bottom: 1px solid #aaa;
+			ul {
+				padding-left: 0px;
+				li {
+					padding-right: 1em;
+					a {
+						text-decoration: none;
+						&:hover{
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#content {
+		@include column($blueprint-grid-columns);
+		p {
+
+		}		
+	}
+	footer#bottom {
+		@include column($blueprint-grid-columns);
+		clear: both;
+		border-top: 1px solid #aaa;
+		border-bottom: 1px solid #aaa;
+		padding-top: 1em;
+		padding-bottom: 4em;
+		
+		
+		articles {
+			@include column(ceil($blueprint-grid-columns * (1/3)));
+			article {
+				margin-bottom: 0.0em;
+				header {
+					margin-bottom: 0.5em;
+					h2 {
+						margin-bottom: 0em;
+					}
+					h4 {
+						margin-bottom: 0em;
+					}
+					.date {
+						
+					}
+				}
+				section {
+					
+				}
+			}
+		}
+		articles + aside {
+			@include prepend(2);
+			@include column(floor(($blueprint-grid-columns * (1/3)) - 2));			
+		}
+		aside + aside {
+			@include prepend(2);
+			@include column(floor(($blueprint-grid-columns * (1/3)) - 2), true);	
+		}
+		
+
+	}
+	
+	copyright {
+		
+	}
+
+
+}
+
+body#news {
+	articles {
+		@include column($blueprint-grid-columns);
+		article {
+			margin-bottom: 3em;
+			header {
+				margin-bottom: 1em;
+				h2 {
+					margin-bottom: 0em;
+				}
+				h4 {
+					margin-bottom: 0em;
+				}
+				.date {
+					span {
+					}
+					em {
+						color: $link-color;
+					}
+				}
+			}
+			section {
+				
+			}
+		}
+	}
+}
+
+body#intro {
+	
+	a {
+		display: block;
+	}
+	#content {
+		h1 {
+			position:relative; 
+			width:100%; 
+		}
+		width: $blueprint-container-size - 300;
+    height:200px;
+    position:absolute;
+    left:50%;
+    top:40%;
+    margin:-100px 0 0 -1*(($blueprint-container-size - 300)/2);
+		#quotation {
+			display: none;
+			font-size: 2em;
+			font-style: italic;
+		}
+
+		a {
+			display: none;
+			text-align: right;
+		}
+
+	}
+	
+}
+
+body#contact {
+	#content {
+		@include container;
+	}
+	#left {
+	  @include column(7);
+	  p {
+	    font-size: 1.1em;
+	    margin-bottom: 25px; }
+	  h5 {
+	    font-size: 1.3em;
+	    font-weight: bold;
+	    margin-bottom: 7px;
+	    color: black;
+	    &.email {
+	      padding-left: 32px;
+	      background: url(../images/icons/mail-32.png) no-repeat scroll center left; }
+	    &.phone {
+	      padding-left: 32px;
+	      background: url(../images/icons/network-wireless.png) no-repeat scroll center left; }
+	    &.life {
+	      padding-left: 32px;
+	      background: url(../images/icons/chat-32.png) no-repeat scroll center left; }
+	    &.franchising {
+	      padding-left: 32px;
+	      background: url(../images/icons/flip-icon.png) no-repeat scroll center left; }
+	    img {
+	      height: 22px;
+	      width: 22px; } }
+	  &.directions {
+	    @include column(15); }
+	  #map {
+	    border: 1px solid #dddddd;
+	    margin-bottom: 10px; } }
+
+	#right {
+	  @include prepend(1);
+	  @include column(16, true);
+	  h5 {
+	    margin-bottom: 8px; }
+	  &.directions {
+	    @include prepend(0);
+	    @include column(9, true);
+	    span {
+	      display: block;
+	      padding-bottom: 10px;
+	      h4 {
+	        font-weight: bold;
+	        margin-bottom: 2px; } } } }
+	
+}

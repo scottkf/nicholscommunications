@@ -1,0 +1,8 @@
+$link-color: #db8e15;
+$background-color: white;
+
+$blueprint-grid-columns: 24;
+$blueprint-container-size: 900px;
+$blueprint-grid-margin: 10px;
+
+$blueprint-grid-width: ($blueprint-container-size + $blueprint-grid-margin) / $blueprint-grid-columns - $blueprint-grid-margin;
