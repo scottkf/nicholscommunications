@@ -387,6 +387,7 @@
 
 			}
 			catch(DatabaseException $e){
+				$Page->log->pushToLog( "ERROR".$e->getDatabaseErrorMessage(), E_NOTICE, true);
 				$database_connection_error = true;
 			}
 			

@@ -19,3 +19,30 @@
 [submodule "extensions/debugdevkit"]
 	path = extensions/debugdevkit
 	url = git://github.com/symphonycms/debugdevkit.git
+[submodule "extension/publishfiltering"]
+	path = extension/publishfiltering
+	url = http://github.com/nickdunn/publishfiltering.git
+[submodule "extensions/publishfiltering"]
+	path = extensions/publishfiltering
+	url = http://github.com/nickdunn/publishfiltering.git
+[submodule "extensions/order_entries"]
+	path = extensions/order_entries
+	url = http://github.com/nickdunn/order_entries.git
+[submodule "extensions/uniqueuploadfield"]
+	path = extensions/uniqueuploadfield
+	url = http://github.com/michael-e/uniqueuploadfield.git
+[submodule "extensions/pagesfield"]
+	path = extensions/pagesfield
+	url = http://github.com/pointybeard/pagesfield.git
+[submodule "extensions/html5_doctype"]
+	path = extensions/html5_doctype
+	url = http://github.com/nickdunn/html5_doctype.git
+[submodule "extensions/numberfield"]
+	path = extensions/numberfield
+	url = http://github.com/pointybeard/numberfield.git
+[submodule "extensions/globalresourceloader"]
+	path = extensions/globalresourceloader
+	url = http://github.com/rowan-lewis/globalresourceloader.git
+[submodule "extensions/mobiledevicedetection"]
+	path = extensions/mobiledevicedetection
+	url = http://github.com/makenosound/mobiledevicedetection.git
