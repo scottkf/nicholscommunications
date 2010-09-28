@@ -46,3 +46,6 @@
 [submodule "extensions/mobiledevicedetection"]
 	path = extensions/mobiledevicedetection
 	url = http://github.com/makenosound/mobiledevicedetection.git
+[submodule "extensions/subsectionmanager"]
+	path = extensions/subsectionmanager
+	url = http://github.com/nilshoerrmann/subsectionmanager.git
