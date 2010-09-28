@@ -82,7 +82,7 @@
 				<h3>On the Web</h3>
 			</aside>
 		</footer>
-		<copyright>2010 Nichols Communications</copyright>
+		<div class="copyright">&#169;2010 Nichols Communications</div>
 	</xsl:if>
 	</div>
 

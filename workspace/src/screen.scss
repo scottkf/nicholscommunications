@@ -19,6 +19,10 @@ body.bp {
 	@include blueprint-typography(true);
 	@include blueprint-utilities;
 
+	h1,h2,h3,h4,h5 {
+		font-family: "Calibri", "Arial", "Helvetica Neue", sans-serif;
+	}
+
 	#container {
 		@include container;
 	}
@@ -36,10 +40,14 @@ body.bp {
 		@include column($blueprint-grid-columns);
 		margin-bottom: 3em;
 		#logo {
-			font-family: "Calibri", "Arial", "Helvetica Neue", sans-serif;
+/*			font-family: "Calibri", "Arial", "Helvetica Neue", sans-serif;*/
+			font-family: "Times New Roman", serif;
 			letter-spacing: -0.05em;
-			font-size: 4em;
+			font-size: 5em;
 			margin-bottom: 50px;
+			a {
+				text-decoration: none;
+			}
 		}
 		nav {
 			padding-bottom: 1em;
@@ -73,13 +81,23 @@ body.bp {
 		border-bottom: 1px solid #aaa;
 		padding-top: 1em;
 		padding-bottom: 4em;
-		
+		margin-bottom: 1em;
+		margin-top: 2em;
+		color: #777;
+		a {
+			&:hover {
+				text-decoration: none;
+			}
+		}
 		
 		articles {
-			@include column(ceil($blueprint-grid-columns * (1/3)));
+			@include column(ceil($blueprint-grid-columns * (1/3)) - 2);
 			article {
 				margin-bottom: 0.0em;
 				header {
+					a {
+						color: #777;
+					}
 					margin-bottom: 0.5em;
 					h2 {
 						margin-bottom: 0em;
@@ -108,11 +126,22 @@ body.bp {
 
 	}
 	
-	copyright {
+	.copyright {
+		padding-bottom: 2em;
+		padding-top: 2em;
 		
 	}
 
 
+}
+
+body#home {
+	#content {
+		p {
+			font-size: 1.5em;
+		}
+	}
+	
 }
 
 body#news {

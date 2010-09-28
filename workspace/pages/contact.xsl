@@ -15,12 +15,12 @@
 	<div id="left">
 	<h5 class="phone">Call us</h5>
 	<p>
-		+1 (561) 745-2511
+		+1 (802) 626-4148
 	</p>
 	<h5 class="email">Contact us via email</h5>
 	<p>
 	  Fill out the form on the right, and we'll get back to you straight away.<br /><br />
-		Mail us directly at <a href="mailto:darylsue@keepflippin.com">darylsue@keepflippin.com</a>.
+		Mail us directly at <a href="mailto:info@nicholscommunications.com">info@nicholscommunications.com</a>.
 	</p>
 	</div>
 	<div id="right">
@@ -39,9 +39,8 @@
     </xsl:for-each>
     <fieldset>
       <div>
-      	<h3>Fill out the form below to send us an email</h3>
-      	<h5>All fields are required.</h5>
-        <hr />
+      	<h3>We would love to hear from you!</h3>
+      	<!-- <h5>All fields are required.</h5> -->
         <label class="required">Your name<input type="text" name="fields[name]" value="{events/save-message/post-values/name}" /></label>
         <label class="required">Email Address<input type="text" name="fields[email]" value="{events/save-message/post-values/email}" /></label>
         <label class="required">This is regarding
@@ -61,7 +60,7 @@
         <input name="send-email[body]" value="fields[message],fields[subject],fields[email],fields[name]" type="hidden" />
   			<input name="fields[date-contacted]" value="{$today}" type="hidden" />
         <input name="send-email[recipient]" value="scott,steve" type="hidden" />
-        <input class="send-message" id="submit" type="submit" name="action[save-message]" value="Submit the form" />
+        <input class="send-message" id="submit" type="submit" name="action[save-message]" value="Send us a message!" />
       </div>
 
     </fieldset>
