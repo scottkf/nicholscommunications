@@ -79,7 +79,8 @@
 				<p><a href="mailto:info@nicholscommunications.com">info@nicholscommunications.com</a></p>
 			</aside>
 			<aside>
-				<h3>On the Web</h3>
+				<h3>Contact us</h3>
+				<img src="{$workspace}/images/qr.jpg" alt="QR code" title="QR Code for Nichols Communications" />
 			</aside>
 		</footer>
 		<div class="copyright">&#169;2010 Nichols Communications</div>

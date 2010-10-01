@@ -22,6 +22,13 @@
 	  Fill out the form on the right, and we'll get back to you straight away.<br /><br />
 		Mail us directly at <a href="mailto:info@nicholscommunications.com">info@nicholscommunications.com</a>.
 	</p>
+	<h5 class="life">By QR</h5>
+	<p>
+	  Scan the code to store all our information with your favorite qr scanner. Available
+	  <a href="http://itunes.apple.com/us/app/optiscan-qr-code-scanner-generator/id304099767?mt=8">via iphone,</a><xsl:text> </xsl:text>
+	  <a href="http://www.appbrain.com/app/barcode-scanner/com.google.zxing.client.android#">or android.</a>
+	  <img class="qr" src="{$workspace}/images/qr.jpg" alt="QR code" title="QR Code for Nichols Communications" />
+	</p>
 	</div>
 	<div id="right">
   <form action="" method="post">

@@ -126,7 +126,11 @@ body.bp {
 		}
 		aside + aside {
 			@include prepend(2);
-			@include column(floor(($blueprint-grid-columns * (1/3)) - 2), true);	
+			@include column(floor(($blueprint-grid-columns * (1/3)) - 2), true);
+			img {
+				width: $blueprint-grid-width * floor(($blueprint-grid-columns * (1/3)) - 3);
+				height: auto;
+			}
 		}
 		
 
@@ -215,6 +219,12 @@ body#contact {
 	}
 	#left {
 	  @include column(7);
+	  img.qr {
+			display: block;
+			margin-top: 1em;
+			width: $blueprint-grid-width * 7;
+			height: auto;
+		}
 	  p {
 	    font-size: 1.1em;
 	    margin-bottom: 25px; }
