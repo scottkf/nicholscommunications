@@ -13,6 +13,9 @@
 @import "compass/utilities/lists/horizontal-list";
 @import "partials/form";
 
+@import "compass/css3";
+
+@include font-face("Roadgeek", font-files("/nichols/workspace/fonts/roadgeek-4b.ttf", truetype));
 
 
 body.bp {
@@ -20,7 +23,7 @@ body.bp {
 	@include blueprint-utilities;
 
 	h1,h2,h3,h4,h5 {
-		font-family: "Calibri", "Arial", "Helvetica Neue", sans-serif;
+		font-family: "Roadgeek", "Calibri", "Arial", "Helvetica Neue", sans-serif;
 	}
 
 	#container {
@@ -28,6 +31,7 @@ body.bp {
 	}
 	
 	a {
+		color: #ef4344;
 		&:visited {
 			
 		}
@@ -43,8 +47,8 @@ body.bp {
 /*			font-family: "Calibri", "Arial", "Helvetica Neue", sans-serif;*/
 			font-family: "Times New Roman", serif;
 			letter-spacing: -0.05em;
-			font-size: 5em;
-			margin-bottom: 50px;
+			margin-top: 3em;
+			margin-bottom: 4em;
 			a {
 				text-decoration: none;
 			}
@@ -59,6 +63,8 @@ body.bp {
 					padding-right: 1em;
 					a {
 						text-decoration: none;
+						font-size: 1.2em;
+						color: #555;
 						&:hover{
 							text-decoration: underline;
 						}

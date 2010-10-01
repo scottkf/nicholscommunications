@@ -49,7 +49,7 @@
 	<xsl:if test="$root-page != 'intro'">
 		<header id="top">
 			<div id="logo">
-				<a href="{$root}"><xsl:value-of select="$website-name"/></a>
+				<a href="{$root}"><img src="{$workspace}/images/logo.jpg" alt="Nichols Communications" title="Nichols Communications Logo" /><!-- <xsl:value-of select="$website-name"/> --></a>
 			</div>
 			<nav>
 				<xsl:apply-templates select="data/system-navigation"/>
