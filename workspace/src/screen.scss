@@ -31,7 +31,7 @@ body.bp {
 	}
 	
 	a {
-		color: #ef4344;
+		color: $link-color;
 		&:visited {
 			
 		}
@@ -60,13 +60,27 @@ body.bp {
 			ul {
 				padding-left: 0px;
 				li {
-					padding-right: 1em;
 					a {
+						display: block;
+						padding: 1em;
+						padding-top: .7em;
+						padding-bottom: 0.5em;
 						text-decoration: none;
 						font-size: 1.2em;
 						color: #555;
+						@include border-top-left-radius(10px);
+						@include border-top-right-radius(10px);
 						&:hover{
-							text-decoration: underline;
+							background-color: #cf7070;
+							color: white;
+						}
+						&.selected {
+							font-weight: bold;
+							background-color: #cd2727;
+							color: white;
+							&:hover {
+								color: white;
+							}
 						}
 					}
 				}
@@ -218,7 +232,7 @@ body#contact {
 		@include container;
 	}
 	#left {
-	  @include column(7);
+	  @include column(6);
 	  img.qr {
 			display: block;
 			margin-top: 1em;
@@ -255,7 +269,7 @@ body#contact {
 	    margin-bottom: 10px; } }
 
 	#right {
-	  @include prepend(1);
+	  @include prepend(2);
 	  @include column(16, true);
 	  h5 {
 	    margin-bottom: 8px; }

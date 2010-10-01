@@ -26,6 +26,7 @@ form {
         h3 {
           color: inherit; } } } }
   label {
+		font-weight: normal;
     &.error, &.invalid, &.success {
       color: black;
       background-color: #eeeeee;
