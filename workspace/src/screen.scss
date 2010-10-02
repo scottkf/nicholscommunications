@@ -53,10 +53,10 @@ body.bp {
 				text-decoration: none;
 			}
 		}
+		border-bottom: 1px solid #aaa;
 		nav {
 			padding-bottom: 1em;
 			@include horizontal-list;
-			border-bottom: 1px solid #aaa;
 			ul {
 				padding-left: 0px;
 				li {
@@ -198,6 +198,17 @@ body#news {
 
 body#intro {
 	
+	#left {
+		@include column(6);
+		a:hover {
+			@include opacity(0.7);
+		}
+	}
+	#right {
+		@include prepend(2);
+		@include column(10, true);
+	}
+	
 	a {
 		display: block;
 	}
@@ -206,21 +217,23 @@ body#intro {
 			position:relative; 
 			width:100%; 
 		}
-		width: $blueprint-container-size - 300;
+		width: $blueprint-container-size - 200;
     height:200px;
     position:absolute;
     left:50%;
-    top:40%;
-    margin:-100px 0 0 -1*(($blueprint-container-size - 300)/2);
+    top:50%;
+    margin:-100px 0 0 -1*(($blueprint-container-size - 200)/2);
 		#quotation {
+			margin-top: 7px;
 			display: none;
 			font-size: 2em;
 			font-style: italic;
 		}
 
-		a {
+		a#enter {
 			display: none;
 			text-align: right;
+			margin-top: 2em;
 		}
 
 	}

@@ -1691,6 +1691,7 @@ body.bp header#top {
   margin-right: 10px;
   width: 900px;
   margin-bottom: 3em;
+  border-bottom: 1px solid #aaa;
 }
 /* line 139, ../../../../../Ruby/Gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.bp header#top {
@@ -1708,7 +1709,7 @@ body.bp header#top #logo {
 body.bp header#top #logo a {
   text-decoration: none;
 }
-/* line 56, ../src/screen.scss */
+/* line 57, ../src/screen.scss */
 body.bp header#top nav {
   padding-bottom: 1em;
   margin: 0;
@@ -1717,7 +1718,6 @@ body.bp header#top nav {
   outline: 0;
   overflow: hidden;
   *zoom: 1;
-  border-bottom: 1px solid #aaa;
 }
 /* line 51, ../../../../../Ruby/Gems/1.8/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/utilities/lists/_horizontal-list.scss */
 body.bp header#top nav li {
@@ -1917,43 +1917,74 @@ body#news articles article header .date em {
 }
 
 /* line 201, ../src/screen.scss */
+body#intro #left {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 217.5px;
+}
+/* line 139, ../../../../../Ruby/Gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body#intro #left {
+  overflow-x: hidden;
+}
+/* line 203, ../src/screen.scss */
+body#intro #left a:hover {
+  opacity: 0.7;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+}
+/* line 207, ../src/screen.scss */
+body#intro #right {
+  padding-left: 75.833px;
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 369.167px;
+}
+/* line 139, ../../../../../Ruby/Gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body#intro #right {
+  overflow-x: hidden;
+}
+/* line 212, ../src/screen.scss */
 body#intro a {
   display: block;
 }
-/* line 204, ../src/screen.scss */
+/* line 215, ../src/screen.scss */
 body#intro #content {
-  width: 600px;
+  width: 700px;
   height: 200px;
   position: absolute;
   left: 50%;
-  top: 40%;
-  margin: -100px 0 0 -300px;
+  top: 50%;
+  margin: -100px 0 0 -350px;
 }
-/* line 205, ../src/screen.scss */
+/* line 216, ../src/screen.scss */
 body#intro #content h1 {
   position: relative;
   width: 100%;
 }
-/* line 215, ../src/screen.scss */
+/* line 226, ../src/screen.scss */
 body#intro #content #quotation {
+  margin-top: 7px;
   display: none;
   font-size: 2em;
   font-style: italic;
 }
-/* line 221, ../src/screen.scss */
-body#intro #content a {
+/* line 233, ../src/screen.scss */
+body#intro #content a#enter {
   display: none;
   text-align: right;
+  margin-top: 2em;
 }
 
-/* line 231, ../src/screen.scss */
+/* line 244, ../src/screen.scss */
 body#contact #content {
   width: 900px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 234, ../src/screen.scss */
+/* line 247, ../src/screen.scss */
 body#contact #left {
   display: inline;
   float: left;
@@ -1964,51 +1995,51 @@ body#contact #left {
 * html body#contact #left {
   overflow-x: hidden;
 }
-/* line 236, ../src/screen.scss */
+/* line 249, ../src/screen.scss */
 body#contact #left img.qr {
   display: block;
   margin-top: 1em;
   width: 195.417px;
   height: auto;
 }
-/* line 242, ../src/screen.scss */
+/* line 255, ../src/screen.scss */
 body#contact #left p {
   font-size: 1.1em;
   margin-bottom: 25px;
 }
-/* line 245, ../src/screen.scss */
+/* line 258, ../src/screen.scss */
 body#contact #left h5 {
   font-size: 1.3em;
   font-weight: bold;
   margin-bottom: 7px;
   color: black;
 }
-/* line 250, ../src/screen.scss */
+/* line 263, ../src/screen.scss */
 body#contact #left h5.email {
   padding-left: 32px;
   background: url(../images/icons/mail-32.png) no-repeat scroll center left;
 }
-/* line 253, ../src/screen.scss */
+/* line 266, ../src/screen.scss */
 body#contact #left h5.phone {
   padding-left: 32px;
   background: url(../images/icons/network-wireless.png) no-repeat scroll center left;
 }
-/* line 256, ../src/screen.scss */
+/* line 269, ../src/screen.scss */
 body#contact #left h5.life {
   padding-left: 32px;
   background: url(../images/icons/chat-32.png) no-repeat scroll center left;
 }
-/* line 259, ../src/screen.scss */
+/* line 272, ../src/screen.scss */
 body#contact #left h5.franchising {
   padding-left: 32px;
   background: url(../images/icons/flip-icon.png) no-repeat scroll center left;
 }
-/* line 262, ../src/screen.scss */
+/* line 275, ../src/screen.scss */
 body#contact #left h5 img {
   height: 22px;
   width: 22px;
 }
-/* line 265, ../src/screen.scss */
+/* line 278, ../src/screen.scss */
 body#contact #left.directions {
   display: inline;
   float: left;
@@ -2019,12 +2050,12 @@ body#contact #left.directions {
 * html body#contact #left.directions {
   overflow-x: hidden;
 }
-/* line 267, ../src/screen.scss */
+/* line 280, ../src/screen.scss */
 body#contact #left #map {
   border: 1px solid #dddddd;
   margin-bottom: 10px;
 }
-/* line 271, ../src/screen.scss */
+/* line 284, ../src/screen.scss */
 body#contact #right {
   padding-left: 75.833px;
   display: inline;
@@ -2036,11 +2067,11 @@ body#contact #right {
 * html body#contact #right {
   overflow-x: hidden;
 }
-/* line 274, ../src/screen.scss */
+/* line 287, ../src/screen.scss */
 body#contact #right h5 {
   margin-bottom: 8px;
 }
-/* line 276, ../src/screen.scss */
+/* line 289, ../src/screen.scss */
 body#contact #right.directions {
   padding-left: 0px;
   display: inline;
@@ -2052,12 +2083,12 @@ body#contact #right.directions {
 * html body#contact #right.directions {
   overflow-x: hidden;
 }
-/* line 279, ../src/screen.scss */
+/* line 292, ../src/screen.scss */
 body#contact #right.directions span {
   display: block;
   padding-bottom: 10px;
 }
-/* line 282, ../src/screen.scss */
+/* line 295, ../src/screen.scss */
 body#contact #right.directions span h4 {
   font-weight: bold;
   margin-bottom: 2px;

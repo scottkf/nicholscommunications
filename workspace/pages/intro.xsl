@@ -15,8 +15,12 @@
 
 
 <xsl:template match="/data">
-	<h1>Nichols Communications</h1>
-	<xsl:apply-templates select="random-quotations/entry" />
-	<a id="enter" href="{$root}/home">enter the site</a>
+	<div id="left">
+		<a href="{$root}/home"><img src="{$workspace}/images/logo.jpg" alt="Nichols Communications" title="Nichols Communications Logo" /></a>
+	</div>
+	<div id="right">
+		<xsl:apply-templates select="random-quotations/entry" />
+		<a id="enter" href="{$root}/home">enter the site</a>
+	</div>
 </xsl:template>
 </xsl:stylesheet>
