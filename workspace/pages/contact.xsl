@@ -15,7 +15,7 @@
 	<div id="left">
 	<h5 class="phone">Call us</h5>
 	<p>
-		+1 (802) 626-4148
+		+1 (802) 626-4142
 	</p>
 	<h5 class="email">Contact us via email</h5>
 	<p>

@@ -58,6 +58,9 @@
 		</header>
 	</xsl:if>
 	<section id="content">
+		<xsl:if test="$current-page != 'news' and count(/data/random-image/entry) > 0">
+			<img class="float" src="{$workspace}{/data/random-image/entry/name/@path}/{/data/random-image/entry/name/filename}" title="{/data/random-image/entry/name/filename}" alt="{/data/random-image/entry/name/filename}"/>
+		</xsl:if>
 		<xsl:apply-templates />
 	</section>
 	
@@ -74,7 +77,7 @@
 				<span class="city">Lyndonville</span>, <span class="state">Vermont</span><xsl:text> </xsl:text>
 				<span class="zip">05851</span></p>
 				<p>
-				<span class="phone">(802) 626-4148</span><br />
+				<span class="phone">(802) 626-4142</span><br />
 				<span class="fax">(802) 626-4142 (fax)</span></p>
 				<p><a href="mailto:info@nicholscommunications.com">info@nicholscommunications.com</a></p>
 			</aside>

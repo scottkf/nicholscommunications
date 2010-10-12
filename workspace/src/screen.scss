@@ -93,6 +93,12 @@ body.bp {
 		p {
 
 		}		
+		
+		img.float {
+			float: right;
+			padding-left: 1em;
+			padding-bottom: 1em;
+		}
 	}
 	footer#bottom {
 		@include column($blueprint-grid-columns);

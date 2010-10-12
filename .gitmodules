@@ -49,3 +49,6 @@
 [submodule "extensions/subsectionmanager"]
 	path = extensions/subsectionmanager
 	url = http://github.com/nilshoerrmann/subsectionmanager.git
+[submodule "extensions/massuploadutility"]
+	path = extensions/massuploadutility
+	url = git@github.com:scottkf/massuploadutility.git
